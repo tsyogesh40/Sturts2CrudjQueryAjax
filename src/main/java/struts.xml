@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="json-default">
+		<action name="registeruser" class="org.websparrow.action.RegisterAction">
+			<result name="REGISTER" type="json"></result>
+		</action>
+		<action name="report" class="org.websparrow.action.ReportAction">
+			<result name="REPORT" type="json"></result>
+		</action>
+		<action name="updateuser" class="org.websparrow.action.UpdateAction">
+			<result name="UPDATE" type="json"></result>
+		</action>
+		<action name="deleteuser" class="org.websparrow.action.DeleteAction">
+			<result name="DELETE" type="json"></result>
+		</action>
+	</package>
+</struts>
